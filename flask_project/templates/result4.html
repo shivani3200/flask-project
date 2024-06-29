@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style_result.css">
+    <title>Sentiment Result</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+    <script src="https://kit.fontawesome.com/bb4c01df05.js" crossorigin="anonymous"></script>
+     
+</head>
+
+<body>
+    <div class="icon">
+        <i class="fa-brands fa-x-twitter neon"></i>
+    </div>
+    <div class="container">
+        <h1 class="header">Prediction Result</h1>
+    <div class="card">
+        <div class="card-body">
+            <!-- <p class="card-text">
+                <h1>
+                    text is :- {{text}}
+                </h1>
+            </p> -->
+            <p class="card-text">
+                <h1 >
+                   <span class="header"> of your tweet is</span> <span id="sentimentOutput" class="output">{{sentiment}}</span> 
+                </h1>
+            </p>
+            <p class="card-text">
+                <img src="{{ url_for('static', filename='img_pool/' + emoji) }}" alt="Emoji" class="emoji">
+            </p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Logic to determine whether the output is positive or negative
+        let sentiment = "{{sentiment}}"; // Replace with your actual logic to get sentiment
+        let sentimentElement = document.getElementById('sentimentOutput');
+
+        // Apply the appropriate CSS class based on the sentiment
+        if (sentiment.toLowerCase() === "positive") {
+            sentimentElement.classList.add('positive');
+        } else if (sentiment.toLowerCase() === "negative") {
+            sentimentElement.classList.add('negative');
+        }
+    });
+</script>
+</html>
+
+

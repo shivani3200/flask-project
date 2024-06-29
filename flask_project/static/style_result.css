@@ -1,0 +1,113 @@
+/* body{
+    background-image: url('img_pool/9539259.jpg');
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+} */
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle,
+    rgba(73,22,94,1)25%,
+    rgba(0,0,0,1)100%);
+}
+.icon{
+    color: white;
+    font-size: 35rem !important;
+    z-index: -1;
+    padding: 30px;
+}
+.neon{
+    text-shadow: 
+    0 0 0rem #fff,
+    0 0 0.5rem #fff,
+    0 0 0rem #fff,
+    0 0 1rem #d400ff,
+    0 0 2rem #d400ff,
+    0 0 1rem #d400ff,
+    0 0 2rem #d400ff,
+    0 0 4rem #d400ff;
+}
+.container {
+    /* background-color: #f4f4f9; */
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+ 
+.card {
+    color: #fff;
+}
+/* .card h1 { 
+    color: #fff;
+} */
+.card-text h1{
+     font-size: 80px;
+}
+
+.emoji {
+    max-width: 100px; /* Adjust maximum width */
+    height: auto; /* Maintain aspect ratio */
+    color: #fff;
+}
+.title {
+    color: #007bff;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.header{
+    font-size: 70px;
+    /* color: #007bff; */
+    color: #fff;
+}
+/* .output{
+    font-size: 60px;
+    color: rgb(75, 239, 75);
+    text-shadow: 
+    0 0 0rem #fff,
+    0 0 0.5rem #fff,
+    0 0 0rem #fff,
+    0 0 1rem #65f64c,
+    0 0 2rem #65f64c,
+    0 0 1rem #65f64c,
+    0 0 2rem #65f64c,
+    0 0 4rem #65f64c;
+} */
+
+.output.positive {
+    /* color: green; */
+    font-size: 70px;
+    color: rgb(15, 42, 97);
+     text-shadow: 
+    0 0 0rem #fff,
+    0 0 0.5rem #fff,
+    0 0 0rem #fff,
+    0 0 0.5rem #65f64c,
+    0 0 1rem #65f64c,
+    0 0 1rem #65f64c,
+    0 0 1rem #65f64c,
+    0 0 2rem #65f64c; 
+}
+
+.output.negative {
+    font-size: 60px;
+    color: rgb(232, 52, 52);
+     text-shadow: 
+    0 0 0rem #fff,
+    0 0 0.5rem #fff,
+    0 0 0rem #fff,
+    0 0 1rem #ce5656,
+    0 0 2rem #e05d5d,
+    0 0 1rem #e05d5d,
+    0 0 2rem #e05d5d,
+    0 0 4rem #e05d5d 
+}
